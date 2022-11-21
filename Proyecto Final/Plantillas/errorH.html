@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House not found</title>
+</head>
+<body style="background-color: black; text-align: center; color: white;">
+    {% if Cliente == 0%}
+    <h1>Casa no encontrada, vuelva e intente nuevamente</h1>
+    {% else %}
+    <h1>Usuario ya Existente, vuelva e intente nuevamente</h1>
+    {% endif %}
+    <a href="/signUp">Volver</a>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menú {{id}}</title>
+</head>
+
+<body style="text-align: center; background-color: black; color: greenyellow;">
+    {% csrf_token %}
+    <h1>Bienvenido</h1>
+    <h3>¿Que parte de la casa desea Controlar?</h3>
+    <a href="/signIn/mainMenu/tablaColores/sala" >
+        <button style="width: 80mm;height:20mm; font-size: 10mm;">Sala</button>
+      </a><br>
+      <a href="/signIn/mainMenu/tablaColores/cocina">
+        <button style="width: 80mm;height:20mm;font-size: 10mm;">Cocina</button>
+      </a> <br>
+      <a href="/signIn/mainMenu/tablaColores/cuarto">
+        <button style="width: 80mm;height:20mm;font-size: 7mm;">Habitacion Principal</button>
+      </a> <br>
+</body>
+ 
+<a class="btn btn-primary" href="/cerrarSesion" role="button" >Cerrar Sesión</a>
+
+
+</html>

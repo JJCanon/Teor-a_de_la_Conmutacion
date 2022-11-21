@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+</head>
+
+<body style="background-color: black; color: white; text-align: center;">
+    <h1 style="color: greenyellow;  text-align: center;">¡¡¡Bienvenido!!!</h1>
+
+    <h3 style="text-align: center;">por favor inicie sesión para acceder</h3>
+
+    <form action="mainMenu" method="POST" style="text-align: center;">
+        {% csrf_token %}
+        <label>Nombre de Usuario</label> <input type="text" name="nameUser"><br>
+        <label>Contraseña</label><input type="password" name="pass"><br>
+        <input type="submit" name="Ingresar" id="signIn">
+    </form>
+    <th>
+        <label>nuevo en el sistema?</label><a href="/signUp">Registrarse</a>
+    </th>
+</body>
+
+</html>
